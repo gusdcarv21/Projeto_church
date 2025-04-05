@@ -1,11 +1,85 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja no Pará</title>
+
+    <style>
+        body{
+            background-image: url(/static/pexels-jibarofoto-2014773.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+        }
+        .cabecalho{
+            border: solid blue;
+            height: 100px;
+        }
+        .container{
+            border: solid ;
+            max-width: 1200px;    /* largura máxima do container */
+            margin: 0 auto;       /* centraliza horizontalmente */
+            padding: 0 15px;      /* espaço nas laterais */
+            width: 100%;          /* ocupa toda a largura disponível até o max-width */
+            box-sizing: border-box; /* inclui padding dentro da largura total */
+            display: flex;
+            align-items: end;
+            height: 400px;
+        }
+        
+        #item{
+            background-color: black;
+            width: 400px;
+            height: 300px;
+            border: solid rgb(245, 245, 245);
+            border-radius: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px;
+            justify-content: center, space-evenly;
+            align-items: center;
+            
+        }
+
+        #botoes{
+            display: flex;
+            justify-content: center,space-between ;
+        }
+
+        .rodape{
+            border: solid red;
+            height: 100px;
+        }
+
+        h1{
+            color: rgb(255, 255, 255);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(250, 250, 250);
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Hello JC :]</h1>
+    <div class="cabecalho"></div>
+    <div class="container">
+        <div id="item">
+            <h1>Igreja em Castanhal</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum enim officia, magni sunt doloribus. Nihil, laboriosam incidunt? Sapiente eligendi cupiditate natus laudantium et minima porro quam, reiciendis architecto doloremque.</p>
+            <div id="botoes">
+                <button>sim</button>
+                <button>não</button>
+                <button>cadastro</button>
+                <button>login</button>
+            </div>
+        </div>
+    </div >      
+    <div class="rodape"></div>             
 </body>
 </html>
