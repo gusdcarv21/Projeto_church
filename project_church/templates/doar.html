@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'MinhaFonte';
+            src: url('/static/fonts/Acme-Regular.ttf') format('truetype');
+        }
+        :root {
+            --cor-primaria: #4CAF50;
+            --cor-secundaria: #333;
+            --fonte-principal: 'MinhaFonte';
+        }
+        body{
+            background-image: url(/static/textura\ folhas.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cabecalho">
+        <a href="https://www.youtube.com/"><img src="/static/O Peixe.png" alt="simbolo" id="logo"></a>
+
+        <div id="links">
+            <a href="" class="link_pagina">Cadastre-se </a><a href="" class="link_pagina" >Login </a><a href="https://www.ensonorte.com/" class="link_pagina" >Retiro oficial </a><a href=""class="link_pagina">doações</a>
+
+        </div>
+        <script>
+            let ultimoScroll = 0;
+            const cabecalho = document.querySelector(".cabecalho");
+          
+            window.addEventListener("scroll", () => {
+              const scrollAtual = window.pageYOffset;
+          
+              if (scrollAtual > ultimoScroll && scrollAtual > 400) {
+                // Rolando pra baixo e já desceu um pouco
+                cabecalho.style.top = "-100px"; // esconde
+              } else {
+                // Rolando pra cima
+                cabecalho.style.top = "0"; // mostra
+              }
+          
+              ultimoScroll = scrollAtual;
+            });
+          </script>
+          
+
+
+</body>
+</html>
