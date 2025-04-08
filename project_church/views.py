@@ -4,5 +4,5 @@ from django.shortcuts import render
 
 
 def igreja(request):
-    return render(request, 'igreja.html')
+    return render(request, 'index.html')
 
