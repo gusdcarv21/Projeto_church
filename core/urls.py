@@ -21,5 +21,6 @@ from project_church import views
 
 urlpatterns = [
     path('', views.igreja, name="igreja"),
+    path('cadastro', views.cadastro, name="cadastro"),
     path('admin/', admin.site.urls),
 ]
